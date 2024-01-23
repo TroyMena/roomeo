@@ -37,3 +37,10 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+// For Cloudinairy:
+app.use((request, response) => {
+  response.json({ message: 'Hey! This is your server response!' }); 
+});
+
+module.exports = app;
