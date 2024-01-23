@@ -22,7 +22,8 @@ const surveyFormHandler = async (event) => {
 
   const response = await fetch('/api/surveys', {
     method: 'POST',
-    body: JSON.stringify({     temperature_pref,
+    body: JSON.stringify({     
+      temperature_pref,
       pets,
       sleepWakeHours,
       parties,
@@ -38,7 +39,8 @@ const surveyFormHandler = async (event) => {
       petPeaves,
       timeSpentInApartment,
       politicalStatus,
-      preferredAgeRange }),
+      preferredAgeRange
+     }),
     headers: { 'Content-Type': 'application/json' },
   });
 
