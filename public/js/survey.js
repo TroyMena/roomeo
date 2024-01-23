@@ -16,7 +16,7 @@ const surveyFormHandler = async (event) => {
   const decorationStyle = document.querySelector('#decoration-style').value.trim();
   const cleaningTasks = document.querySelector('#cleaning-tasks').value.trim();
   const bathroom = document.querySelector('#bathroom').value.trim();
-  const petPeaves = document.querySelector('#pet-peeves').value.trim();
+  const petPeeves = document.querySelector('#pet-peeves').value.trim();
   const timeSpentInApartment = document.querySelector('#time-spent-in-apartment').value.trim();
   const politicalStatus = document.querySelector('#political-status').value.trim();
   const preferredAgeRange = document.querySelector('#preferred-age-range').value.trim();
@@ -37,7 +37,8 @@ const surveyFormHandler = async (event) => {
       smoking,
       decorationStyle,
       cleaningTasks,
-      petPeaves,
+      bathroom,
+      petPeeves,
       timeSpentInApartment,
       politicalStatus,
       preferredAgeRange
