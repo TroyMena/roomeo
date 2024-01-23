@@ -17,67 +17,71 @@ Survey.init(
     },
     pets: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     sleepWakeHours: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     parties: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     cleanlinessLevel: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     moveInDate: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     relationshipStatus: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     sharingItems: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     livingStyle: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     drinkingHabits: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     smoking: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     decorationStyle: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     cleaningTasks: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
-    petPeaves: {
+    bathroom: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
+    petPeeves: {
       type: DataTypes.STRING,
       allowNull: true,
     },
     timeSpentInApartment: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     politicalStatus: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     preferredAgeRange: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
