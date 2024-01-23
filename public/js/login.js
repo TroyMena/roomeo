@@ -34,10 +34,10 @@ const signupFormHandler = async (event) => {
     });
     
     if (response.ok) {
-      document.location.replace('/');
-      res.render('survey', { 
-        logged_in: req.session.logged_in 
-      });
+      document.location.replace('/survey');
+      // res.render('survey', { 
+      //   logged_in: req.session.logged_in 
+      // });
     } else {
       alert('Failed to sign up.');
     }
