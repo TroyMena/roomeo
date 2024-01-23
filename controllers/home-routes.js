@@ -63,6 +63,16 @@ router.get('/gallery/:id', withAuth, async (req, res) => {
   }
 });
 
+//GET survey page
+router.get('/survey', async (req, res) => {
+  try {
+    res.render('survey', { loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 // GET one painting
 // Use the custom middleware before allowing the user to access the painting
 router.get('/painting/:id', withAuth, async (req, res) => {
