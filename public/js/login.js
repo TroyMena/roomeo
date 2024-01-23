@@ -32,10 +32,10 @@ const signupFormHandler = async (event) => {
       body: JSON.stringify({ username, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-
+    
     if (response.ok) {
-      //document.location.replace('/survey');
-      res.render('profile', { 
+      document.location.replace('/');
+      res.render('survey', { 
         logged_in: req.session.logged_in 
       });
     } else {
