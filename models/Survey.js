@@ -66,7 +66,7 @@ Survey.init(
     bathroom: {
       type: DataTypes.STRING,
       allowNull: false,
-    }
+    },
     petPeeves: {
       type: DataTypes.STRING,
       allowNull: true,
