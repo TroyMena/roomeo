@@ -7,6 +7,7 @@ const withAuth = require('../../utils/auth');
 router.get('/', async (req, res) => {
   try {
     const surveyData = await Survey.findAll({
+      include: [{model: User},],
     });
     res.status(200).json(surveyData);
   } catch (err) {
