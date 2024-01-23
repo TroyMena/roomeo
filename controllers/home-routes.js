@@ -6,6 +6,12 @@ const withAuth = require('../utils/auth');
 // GET all galleries for homepage
 router.get('/', async (req, res) => {
   try {
+    if(req.session.loggedIn==undefined){
+      res.render('login', { 
+        logged_in: req.session.logged_in 
+      });
+    }
+    else{
     const dbGalleryData = await Gallery.findAll({
       include: [
         {
@@ -23,7 +29,7 @@ router.get('/', async (req, res) => {
       galleries,
       loggedIn: req.session.loggedIn,
     });
-  } catch (err) {
+  }} catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
