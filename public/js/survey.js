@@ -13,10 +13,32 @@ const surveyFormHandler = async (event) => {
   const livingStyle = document.querySelector('#living-style').value.trim();
   const drinkingHabits = document.querySelector('#drinking-habits').value.trim();
   const smoking = document.querySelector('#smoking-habits').value.trim();
+  const decorationStyle = document.querySelector('#decoration-style').value.trim();
+  const cleaningTasks = document.querySelector('#cleaning-tasks').value.trim();
+  const petPeaves = document.querySelector('#pet-peeves').value.trim();
+  const timeSpentInApartment = document.querySelector('#time-spent-in-apartment').value.trim();
+  const politicalStatus = document.querySelector('#political-status').value.trim();
+  const preferredAgeRange = document.querySelector('#preferred-age-range').value.trim();
 
   const response = await fetch('/api/surveys', {
     method: 'POST',
-    body: JSON.stringify({ temperature_pref, pets }),
+    body: JSON.stringify({     temperature_pref,
+      pets,
+      sleepWakeHours,
+      parties,
+      cleanlinessLevel,
+      moveInDate,
+      relationshipStatus,
+      sharingItems,
+      livingStyle,
+      drinkingHabits,
+      smoking,
+      decorationStyle,
+      cleaningTasks,
+      petPeaves,
+      timeSpentInApartment,
+      politicalStatus,
+      preferredAgeRange }),
     headers: { 'Content-Type': 'application/json' },
   });
 
