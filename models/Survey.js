@@ -15,6 +15,10 @@ Survey.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    pets: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {

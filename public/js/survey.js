@@ -1,9 +1,28 @@
-//WE want to implement a POST request for temperature preference data for the Survey model. 
+//Josh added this document to extract survey data from the form and send it to the database
 
-const loginFormHandler = async (event) => {
-  console.log("HIT")
-};
+const surveyFormHandler = async (event) => {
+  event.preventDefault(); // Add this line to prevent the default form submission
+  const temperature_pref = document.querySelector('#temperature').value.trim();
+  const pets = document.querySelector('#pets').value.trim();
+  const sleepWakeHours = document.querySelector('#sleep-wake-hours').value.trim();
+  const parties = document.querySelector('#parties').value.trim();
+  const cleanlinessLevel = document.querySelector('#cleanliness-level').value.trim();
+  const moveInDate = document.querySelector('#move-in-date').value.trim();
+  const relationshipStatus = document.querySelector('#relationship-status').value.trim();
+  const sharingItems = document.querySelector('#sharing-items').value.trim();
+  const livingStyle = document.querySelector('#living-style').value.trim();
+  const drinkingHabits = document.querySelector('#drinking-habits').value.trim();
+  const smoking = document.querySelector('#smoking-habits').value.trim();
+
+  const response = await fetch('/api/surveys', {
+    method: 'POST',
+    body: JSON.stringify({ temperature_pref, pets }),
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+
+  };
 
   document
   .querySelector('.roommate-survey')
-  .addEventListener('submit', loginFormHandler);
+  .addEventListener('submit', surveyFormHandler);
