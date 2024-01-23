@@ -23,10 +23,6 @@ Gallery.init(
       type: DataTypes.DATE,
       allowNull: false,
     },
-    age: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
   },
   {
     sequelize,

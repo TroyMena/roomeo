@@ -1,6 +1,23 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+//Josh added
+// The `/api/users` endpoint
+router.get('/', async (req, res) => {
+  // find all categories
+  // be sure to include its associated Products
+  try {
+    const userData = await User.findAll({
+    });
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+
+
 // CREATE new user
 router.post('/', async (req, res) => {
   try {
