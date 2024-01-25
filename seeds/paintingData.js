@@ -59,7 +59,7 @@ const paintingdata = [
     gallery_id: 4,
     filename: '07-gypsy.jpg',
     description:
-      'John Doe',
+      'Gypsy',
   },
   {
     title: 'Gypsy Rose Blanchard',
@@ -68,7 +68,7 @@ const paintingdata = [
     gallery_id: 4,
     filename: '08-gypsy.jpg',
     description:
-      'John Doe',
+      'Gypsy',
   },
 ];
 
