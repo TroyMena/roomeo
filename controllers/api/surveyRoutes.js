@@ -17,7 +17,6 @@ router.get('/', async (req, res) => {
 
 //Create new Survey
 router.post('/', withAuth, async (req, res) => {
-  console.log("HELOOOOOOOOOOOOOOOO")
   try {
     console.log(req.body)
     const newSurvey = await Survey.create({
