@@ -22,17 +22,22 @@ const surveyFormHandler = async (event) => {
   //const preferredAgeRange = document.querySelector('#preferred-age-range').value.trim();
   const name = document.querySelector('#First-Last').value.trim();
   const age = document.querySelector('#age-range').value.trim();
-  const profilePic = document.querySelector('#file-input').value
+  const profilePicLocation = document.querySelector('#file-input')
+  const file = profilePicLocation.files[0].name;
+  console.log(file)
+  
 
   //Josh: response1 IS NOT WORKING SINCE profilePic is not a file path. Ask Nelio. 
-  // const response1 = await fetch('/image-upload', {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({ "image": `${profilePic}` }),
-  // });
-
+  const response1 = await fetch('/image-upload', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ "image": `/Users/images/${file}` }), //Only works for mac and in an images folder
+  });
+  const data = await response1.json();
+  const profilePic = (data.result.url)
+console.log(profilePic)
   //body: JSON.stringify({ "image": "/Users/jalland/Desktop/Picture1.png" }),
 
 
@@ -57,7 +62,8 @@ const surveyFormHandler = async (event) => {
       timeSpentInApartment,
       politicalStatus,
       name,
-      age
+      age,
+      profilePic,
      }),
     headers: { 'Content-Type': 'application/json' },
   });
