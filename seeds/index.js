@@ -1,7 +1,7 @@
 const sequelize = require('../config/connection');
 // const seedSurvey = require('./surveyData');
 const seedPaintings = require('./paintingData');
-const seedGallery = require('../../../groupProject2a/Solved/seeds/galleryData');
+const seedGallery = require('./galleryData');
 
 
 const seedAll = async () => {
