@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const multer = require('multer');
 const cloudinary = require('cloudinary').v2;
 const bodyParser = require('body-parser');
 const session = require('express-session');
@@ -47,6 +48,10 @@ cloudinary.config({
   api_secret: process.env.API_SECRET
 });
 
+// Set up Multer for file uploads
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
@@ -54,6 +59,22 @@ sequelize.sync({ force: false }).then(() => {
 // For Cloudinairy:
 app.get("/", (request, response) => {
   response.json({ message: "Hey! This is your server response!" });
+});
+
+// Handle file upload
+app.post('/upload', upload.single('file'), (req, res) => {
+  // Upload the file to Cloudinary
+  cloudinary.uploader.upload_stream(
+    { resource_type: 'auto' },
+    (error, result) => {
+      if (error) {
+        return res.status(500).json({ error: 'Error uploading file to Cloudinary' });
+      }
+      // The result object contains information about the uploaded file
+      const imageUrl = result.secure_url;
+      res.json({ imageUrl });
+    }
+  ).end(req.file.buffer);
 });
 
 // image upload API
