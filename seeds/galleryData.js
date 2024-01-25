@@ -17,7 +17,7 @@ const gallerydata = [
     ending_date: 'December 21, 2021 20:30:00',
   },
   {
-    name: 'John Doe',
+    name: 'Gypsy Rose Blanchard',
     starting_date: 'December 22, 2020 11:00:00',
     ending_date: 'March 19, 2021 19:00:00',
   },
