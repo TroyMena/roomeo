@@ -20,6 +20,23 @@ const surveyFormHandler = async (event) => {
   const timeSpentInApartment = document.querySelector('#time-spent-in-apartment').value.trim();
   const politicalStatus = document.querySelector('#political-status').value.trim();
   const preferredAgeRange = document.querySelector('#preferred-age-range').value.trim();
+  //const name = document.querySelector('#First-Last').value.trim();
+  //const age = document.querySelector('#age-range').value.trim();
+  const profilePic = document.querySelector('#file-input').value.trim();
+  console.log(profilePic)
+
+  // const response1 = await fetch('/image-upload', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify({ image: profilePic }),
+  // });
+
+  const response1 = await fetch('/image-upload', {
+  method: 'POST',
+  body: profilePic,
+});
 
   const response = await fetch('/api/surveys', {
     method: 'POST',
@@ -41,7 +58,9 @@ const surveyFormHandler = async (event) => {
       petPeeves,
       timeSpentInApartment,
       politicalStatus,
-      preferredAgeRange
+      preferredAgeRange,
+      name,
+      age
      }),
     headers: { 'Content-Type': 'application/json' },
   });

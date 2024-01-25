@@ -13,59 +13,59 @@ Survey.init(
     },
     temperature_pref: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     pets: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     sleepWakeHours: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     parties: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     cleanlinessLevel: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     moveInDate: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     relationshipStatus: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     sharingItems: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     livingStyle: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     drinkingHabits: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     smoking: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     decorationStyle: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     cleaningTasks: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     bathroom: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     petPeeves: {
       type: DataTypes.STRING,
@@ -73,15 +73,27 @@ Survey.init(
     },
     timeSpentInApartment: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     politicalStatus: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     preferredAgeRange: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    age: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    profilePic: {
+      type: DataTypes.STRING,
+      allowNull: true,
     },
     user_id: {
       type: DataTypes.INTEGER,
