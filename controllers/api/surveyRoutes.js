@@ -1,13 +1,13 @@
 //Josh added this file to create Survey data in the database
 const router = require('express').Router();
-const { Survey } = require('../../models');
+const { User, Survey } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // The `/api/surveys` endpoint
 router.get('/', async (req, res) => {
   try {
     const surveyData = await Survey.findAll({
-      //include: [{model: User}],
+      include: [{ model: User }],
     });
     res.status(200).json(surveyData);
   } catch (err) {
@@ -22,7 +22,7 @@ router.post('/', withAuth, async (req, res) => {
     console.log(req.body)
     const newSurvey = await Survey.create({
       ...req.body,
-      user_id: req.session.user_id,
+      //user_id: req.session.user_id,
     });
     console.log(newSurvey)
     res.status(200).json(newSurvey);
