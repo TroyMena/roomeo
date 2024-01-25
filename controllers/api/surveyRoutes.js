@@ -7,7 +7,7 @@ const withAuth = require('../../utils/auth');
 router.get('/', async (req, res) => {
   try {
     const surveyData = await Survey.findAll({
-      include: [{model: User},],
+      //include: [{model: User}],
     });
     res.status(200).json(surveyData);
   } catch (err) {
@@ -19,7 +19,6 @@ router.get('/', async (req, res) => {
 router.post('/', withAuth, async (req, res) => {
   console.log("HELOOOOOOOOOOOOOOOO")
   try {
-    console.log(req.session);
     console.log(req.body)
     const newSurvey = await Survey.create({
       ...req.body,

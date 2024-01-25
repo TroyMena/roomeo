@@ -79,16 +79,12 @@ Survey.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    preferredAgeRange: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
     name: {
       type: DataTypes.STRING,
       allowNull: true,
     },
     age: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     profilePic: {
