@@ -184,3 +184,9 @@ img {
   align-content: flex-start;
   align-items: center;
 }
+
+/* /LOGIN / SIGNUP PAGE/ */
+
+.login-card .form-group label {
+  color: #000000
+}
