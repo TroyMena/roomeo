@@ -73,11 +73,13 @@ function validateAgeRange() {
           <option value="get-up-at-10am">I don't get up till around 10am</option>
           <option value="wake-up-at-12pm">I wake up at 12pm because I go to sleep around 3am</option>
           <option value="late-nights-early-mornings">I like late nights but still get up early</option>
+          <option value="sporadic">I never sleep</option>
         </select>
       </div>
       <div class="form-group">
         <label for="parties">Parties?</label>
         <select class="form-select" id="parties" name="parties">
+          <option value="no-parties">No parties</option>
           <option value="once-a-month">Maybe once a month a friend will stop by</option>
           <option value="once-a-week">About once a week</option>
           <option value="often">Family and friends stop by often</option>
@@ -118,7 +120,7 @@ function validateAgeRange() {
         </select>
       </div>
       <div class="form-group">
-        <label for="living-style">Living Style:</label>
+        <label for="living-style">Getting to Know Each Other</label>
         <select class="form-select" id="living-style" name="living-style">
           <option value="love-to-be-friends">Yes, I would love that</option>
           <option value="occasionally-talk">We can occasionally talk</option>
@@ -129,11 +131,11 @@ function validateAgeRange() {
       <div class="form-group">
         <label for="drinking-habits">Do you drink? How often?</label>
         <select class="form-select" id="drinking-habits" name="drinking-habits">
+          <option value="drink-no">No</option>
           <option value="drink-yes">Yes</option>
           <option value="drink-rarely">Rarely</option>
           <option value="drink-occasionally">Occasionally</option>
           <option value="drink-all-the-time">All the time</option>
-          <option value="drink-no">No</option>
           <option value="prefer-no-drinking">Would prefer if my roommate doesn’t drink</option>
           <option value="dont-care-drinking">I don’t care if my roommate drinks</option>
         </select>
@@ -142,9 +144,9 @@ function validateAgeRange() {
         <label for="smoking-habits">Do you smoke?</label>
         <select class="form-select" id="smoking-habits" name="smoking-habits">
           <option value="no-smoke">No</option>
+          <option value="smoke-yes">Yes</option>
           <option value="prefer-no-smoking">Would prefer if my roommate does not smoke</option>
           <option value="dont-care-smoking">Don’t care if my roommate smokes</option>
-          <option value="smoke-yes">Yes</option>
           <option value="smoke-rarely">Rarely</option>
           <option value="smoke-occasionally">Occasionally</option>
           <option value="smoke-every-day">Every dayyyyyyyyy</option>
