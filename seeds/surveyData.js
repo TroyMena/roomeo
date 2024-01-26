@@ -1,28 +1,100 @@
-// const { Survey } = require('../models');
+const { Survey } = require('../models');
 
-// const surveydata = [
-//   {
-//     name: 'Cardi B',
-//     age: 29,
-//     profilePic: 'https://res.cloudinary.com/dyjuhnsa0/image/upload/v1706142485/s5w2qoh0r8nkde8lkq04.png'
-//   },
-//   {
-//     name: 'Obama',
-//     age: 62,
-//     profilePic: 'https://res.cloudinary.com/dyjuhnsa0/image/upload/v1706142485/s5w2qoh0r8nkde8lkq04.png'
-//   },
-//   {
-//     name: 'Megan Thee Stallion',
-//     age: 28,
-//     profilePic: 'https://res.cloudinary.com/dyjuhnsa0/image/upload/v1706142485/s5w2qoh0r8nkde8lkq04.png'
-//   },
-//   {
-//     name: 'Gypsy Rose Blanchard',
-//     age: 32,
-//     profilePic: 'https://res.cloudinary.com/dyjuhnsa0/image/upload/v1706142485/s5w2qoh0r8nkde8lkq04.png'
-//   }, 
-// ];
+const surveydata = [
+  {
+    name: 'Cardi B',
+    //age: 29,
+    temperature_pref: "80-plus",
+    pets: "has-pets-open",
+    sleepWakeHours: "morning-person",
+    parties: "once-a-month",
+    cleanlinessLevel: "clean-once-a-week",
+    moveInDate: "immediately",
+    relationshipStatus: "prefer-no-partner",
+    sharingItems: "prefer-ask",
+    livingStyle: "be-friendly",
+    drinkingHabits: "drink-yes",
+    smoking: "prefer-no-smoking",
+    decorationStyle: "neutral-colors",
+    cleaningTasks: "clean-50-50",
+    bathroom: "preferable",
+    petPeeves: "I hate Trump",
+    timeSpentInApartment: "weekends-out",
+    politicalStatus: "left",
+    preferredAgeRange: null,
+    profilePic: '/images/01-cardib.jpg'
+  },
+  {
+    name: 'Obama',
+    //age: 62,
+    temperature_pref: "80-plus",
+    pets: "has-pets-open",
+    sleepWakeHours: "morning-person",
+    parties: "once-a-month",
+    cleanlinessLevel: "clean-once-a-week",
+    moveInDate: "immediately",
+    relationshipStatus: "prefer-no-partner",
+    sharingItems: "prefer-ask",
+    livingStyle: "be-friendly",
+    drinkingHabits: "drink-yes",
+    smoking: "prefer-no-smoking",
+    decorationStyle: "neutral-colors",
+    cleaningTasks: "clean-50-50",
+    bathroom: "preferable",
+    petPeeves: "I hate Trump",
+    timeSpentInApartment: "weekends-out",
+    politicalStatus: "left",
+    preferredAgeRange: null,
+    profilePic: '/images/04-obama.jpg'
+  },
+  {
+    name: 'Megan Thee Stallion',
+    //age: 28,
+    temperature_pref: "80-plus",
+    pets: "has-pets-open",
+    sleepWakeHours: "morning-person",
+    parties: "once-a-month",
+    cleanlinessLevel: "clean-once-a-week",
+    moveInDate: "immediately",
+    relationshipStatus: "prefer-no-partner",
+    sharingItems: "prefer-ask",
+    livingStyle: "be-friendly",
+    drinkingHabits: "drink-yes",
+    smoking: "prefer-no-smoking",
+    decorationStyle: "neutral-colors",
+    cleaningTasks: "clean-50-50",
+    bathroom: "preferable",
+    petPeeves: "I hate Trump",
+    timeSpentInApartment: "weekends-out",
+    politicalStatus: "left",
+    preferredAgeRange: null,
+    profilePic: '/images/05-megan.jpg'
+  },
+  {
+    name: 'Gypsy Rose Blanchard',
+    //age: 32,
+    temperature_pref: "80-plus",
+    pets: "has-pets-open",
+    sleepWakeHours: "morning-person",
+    parties: "once-a-month",
+    cleanlinessLevel: "clean-once-a-week",
+    moveInDate: "immediately",
+    relationshipStatus: "prefer-no-partner",
+    sharingItems: "prefer-ask",
+    livingStyle: "be-friendly",
+    drinkingHabits: "drink-yes",
+    smoking: "prefer-no-smoking",
+    decorationStyle: "neutral-colors",
+    cleaningTasks: "clean-50-50",
+    bathroom: "preferable",
+    petPeeves: "I hate Trump",
+    timeSpentInApartment: "weekends-out",
+    politicalStatus: "left",
+    preferredAgeRange: null,
+    profilePic: '/images/08-gypsy.jpg'
+  }, 
+];
 
-// const seedSurvey = () => Survey.bulkCreate(surveydata);
+const seedSurvey = () => Survey.bulkCreate(surveydata);
 
-// module.exports = seedSurvey;
+module.exports = seedSurvey;
