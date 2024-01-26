@@ -51,7 +51,10 @@ header {
   padding: 40px;
   text-align: center;
   background: #81c0d7;
-  color: var(--light);}
+  color: var(--light);
+  height: 40px;
+}
+  
 
 main {
   display: flex;
