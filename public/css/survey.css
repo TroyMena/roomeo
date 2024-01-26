@@ -9,6 +9,7 @@
 
 .form-group {
     margin-bottom: 15px;
+
 }
 
 h3 {
@@ -58,7 +59,7 @@ label[for="file-input"] {
 }
 
 .form-select {
-    width: 100%;
+    width: 200%;
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
@@ -67,7 +68,7 @@ label[for="file-input"] {
 }
 
 .form-input {
-    width: 100%;
+    width: 150%;
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
@@ -84,4 +85,8 @@ label[for="file-input"] {
     color: #333;
 }
 
+
+#pet-peeves {
+    width: 150%;
+  }
   
