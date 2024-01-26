@@ -2,8 +2,6 @@
 function handleCloudinaryUpload(url) {
   cloudinary_url = url;
 }
-
-//Josh added this document to extract survey data from the form and send it to the database
 const surveyFormHandler = async (event) => {
   console.log(cloudinary_url)
   event.preventDefault(); // Add this line to prevent the default form submission
