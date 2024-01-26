@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   justify-content: flex-start;
   background-color: var(--quatrinary);
+  cursor: default;
 }
 
 a {
@@ -83,18 +84,17 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
+  color: #d8e7ed;
 }
 
 .gallery {
   flex: 4;
-  background-color: #fff;
   padding: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: #d8e7ed; 
 }
 
 .btn-no-style {
@@ -108,23 +108,16 @@ nav a:hover {
   margin-left: 16px;
 }
 
+.btn-no-style:hover {
+ color: #d8e7ed;
+ text-decoration: underline;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-.painting {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.painting-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-}
 
 
 /* CARDS */
@@ -141,7 +134,7 @@ img {
   margin: 0 0 20px 0;
   flex: 0 0 50%;
   max-width: 50%;
-  padding: 5px;
+  padding: 50px;
   border: 3px solid var(--dark);
   border-radius: var(--border-radius);
   border-style: double;
@@ -184,10 +177,6 @@ img {
   align-content: flex-start;
   align-items: center;
   margin: 10px;
-}
-
-.gallery{
-  background-color: #d8e7ed; 
 }
 
 /* /LOGIN / SIGNUP PAGE/ */

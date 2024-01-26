@@ -15,6 +15,7 @@
 h3 {
     text-align: center;
     color: #333;
+    margin-bottom: 40px;
 }
 
 .btn-primary {
@@ -74,6 +75,7 @@ label[for="file-input"] {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: small;
 }
 
 .form-group label {
@@ -88,6 +90,7 @@ label[for="file-input"] {
 
 #pet-peeves {
     width: 150%;
+    font-size: small;
   }
   
 /* /PROFILE PAGE */
