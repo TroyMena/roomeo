@@ -10,6 +10,7 @@
 }
 
 h1 {
+  color: white;
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
@@ -39,8 +40,6 @@ a:visited {
 header {
   padding: 40px;
   text-align: center;
-  /* background: #81c0d7;
-  color: var(--light); */
   background-image: url("https://wallpapercave.com/wp/xQsFXHL.jpg");
   background-size: cover;
   background-repeat: no-repeat;
