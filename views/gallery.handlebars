@@ -1,36 +1,29 @@
 <section class="container">
   <img src="{{surveys.profilePic}}" alt="Profile Picture" class="profile-image">
   <h3 class="gallery-name">{{surveys.name}}</h3>
-  <h4>Temperature Preference: {{surveys.temperature_pref}}</h4>
-  <h4>Sleep and Wake Hours: {{surveys.sleepWakeHours}}</h4>
-  <h4>Parties: {{surveys.parties}}</h4>
-  <h4>Cleanliness Level: {{surveys.cleanlinessLevel}}</h4>
-  <h4>Move-In Date: {{surveys.moveInDate}}</h4>
-  <h4>Relationship Status: {{surveys.relationshipStatus}}</h4>
-  <h4>Sharing Items: {{surveys.sharingItems}}</h4>
-  <!-- Add the following for the rest of the attributes -->
-  <h4>Living Style: {{surveys.livingStyle}}</h4>
-  <h4>Drinking Habits: {{surveys.drinkingHabits}}</h4>
-  <h4>Smoking: {{surveys.smoking}}</h4>
-  <h4>Decoration Style: {{surveys.decorationStyle}}</h4>
-  <h4>Cleaning Tasks: {{surveys.cleaningTasks}}</h4>
-  <h4>Bathroom: {{surveys.bathroom}}</h4>
-  <h4>Pet Peeves: {{surveys.petPeeves}}</h4>
-  <h4>Time Spent In Apartment: {{surveys.timeSpentInApartment}}</h4>
-  <h4>Political Status: {{surveys.politicalStatus}}</h4>
+  <h5 class="questions">Temperature Preference:</h5> <span class="answer">{{surveys.temperature_pref}}</span>
+  <h5 class="questions">Sleep and Wake Hours:</h5> <span class="answer">{{surveys.sleepWakeHours}}</span>
+  <h5 class="questions">Parties:</h5> <span class="answer">{{surveys.parties}}</span>
+  <h5 class="questions">Cleanliness Level: </h5>  <span class="answer">{{surveys.cleanlinessLevel}}</span>
+  <h5 class="questions">Move-In Date: </h5> <span class="answer"> {{surveys.moveInDate}}</span>
+  <h5 class="questions">Relationship Status: </h5> <span class="answer"> {{surveys.relationshipStatus}}</span>
+  <h5 class="questions">Sharing Items:</h5> <span class="answer"> {{surveys.sharingItems}}</span>
+  <h5 class="questions">Living Style:</h5>  <span class="answer"> {{surveys.livingStyle}}</span>
+  <h5 class="questions">Drinking Habits:</h5>  <span class="answer"> {{surveys.drinkingHabits}}</span>
+  <h5 class="questions">Smoking: </h5> <span class="answer">{{surveys.smoking}}</span>
+  <h5 class="questions">Decoration Style: </h5>  <span class="answer">{{surveys.decorationStyle}}</span>
+  <h5 class="questions">Cleaning Tasks:</h5> <span class="answer">{{surveys.cleaningTasks}}</span>
+  <h5 class="questions">Bathroom: </h5> <span class="answer"> {{surveys.bathroom}}</span>
+  <h5 class="questions">Pet Peeves: </h5>  <span class="answer"> {{surveys.petPeeves}}</span>
+  <h5 class="questions">Time Spent In Apartment: </h5>  <span class="answer"> {{surveys.timeSpentInApartment}}</span>
+  <h5 class="questions">Political Status: </h5>  <span class="answer">{{surveys.politicalStatus}}</span>
 
   <!-- Other details... -->
 
-  <section class="flex-row justify-center">
+  <section>
+     {{!-- class="flex-row justify-center" --}}
     {{#each surveys.url as |url|}}
     {{/each}}
   </section>
 </section>
-
-<style>
-  .profile-image {
-    width: 200px; /* Set your desired width */
-    height: auto; /* Maintain the aspect ratio */
-  }
-</style>
 

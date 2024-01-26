@@ -90,3 +90,26 @@ label[for="file-input"] {
     width: 150%;
   }
   
+.questions{
+  font-family: 'Roboto';
+  padding-top: 5px;
+  text-decoration: underline; 
+}
+
+.answer{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #555;
+    padding: 5px;
+}
+
+.gallery{
+    background-color: #d8e7ed;
+    
+}
+
+.profile-image{
+padding: 10px;
+width: 500px; /* Set your desired width */
+height: auto; /* Maintain the aspect ratio */
+}
