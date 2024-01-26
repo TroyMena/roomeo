@@ -30,6 +30,15 @@ router.get('/', async (req, res) => {
   }
 });
 
+//Josh added this, as the login button was not directing to login page when logged out. 
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('login');
+});
+
 
 // Get one survey
 // Use the custom middleware before allowing the user to access the survey
