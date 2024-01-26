@@ -18,11 +18,29 @@
       </div>
 
 
-           <div class="form-group">
-  <label for="preferred-age-range">Preferred Age Range of Roommate:</label>
-  <input type="range" class="form-range" id="preferred-age-range" name="preferred-age-range" min="18" max="99" oninput="updateAgeRangeValue()">
-  <span id="preferred-age-range-value">18</span>
+   <div class="form-group">
+  <label for="preferred-age-range">Your age:</label>
+  <input type="text" class="form-range" id="preferred-age-range" name="preferred-age-range" 
+         pattern="[1-9][0-9]|99" title="Please enter a number between 18 and 99"
+         inputmode="numeric" oninput="updateAgeRangeValue(); validateAgeRange()">
+  <div id="age-error" style="color: red; display: none;">Please enter a valid age between 18 and 99.</div>
 </div>
+
+<script>
+function validateAgeRange() {
+  var input = document.getElementById("preferred-age-range");
+  var errorDiv = document.getElementById("age-error");
+  var value = parseInt(input.value);
+
+  if (isNaN(value) || value < 18 || value > 99) {
+    errorDiv.style.display = "block";
+  } else {
+    errorDiv.style.display = "none";
+  }
+}
+</script>
+
+
 
 <div class="form-group">
         <label for="bio">Bio:</label>
