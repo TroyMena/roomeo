@@ -22,9 +22,8 @@ const surveyFormHandler = async (event) => {
   const petPeeves = document.querySelector('#pet-peeves').value.trim();
   const timeSpentInApartment = document.querySelector('#time-spent-in-apartment').value.trim();
   const politicalStatus = document.querySelector('#political-status').value.trim();
-  //const preferredAgeRange = document.querySelector('#preferred-age-range').value.trim();
   const name = document.querySelector('#First-Last').value.trim();
-  //const age = document.querySelector('#age-range').value.trim();
+  const ageRange= document.querySelector('#age-range').value.trim();
   //const profilePicLocation = document.querySelector('#file-input')
   //const file = profilePicLocation.files[0].name;
   //console.log(file)
@@ -66,7 +65,7 @@ const surveyFormHandler = async (event) => {
       timeSpentInApartment,
       politicalStatus,
       name,
-     // preferredAgeRange,
+      ageRange,
       profilePic,
      }),
     headers: { 'Content-Type': 'application/json' },

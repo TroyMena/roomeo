@@ -16,7 +16,7 @@ Profile.init(
           type: DataTypes.STRING,
           allowNull: true,
         },
-        age: {
+        ageRange: {
           type: DataTypes.INTEGER,
           allowNull: true,
         },
