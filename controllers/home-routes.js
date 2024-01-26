@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const { Survey, User, Gallery, Painting } = require('../models');
+const { Survey, User } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
-// GET all galleries for homepage
+// Get all surveys
 router.get('/', async (req, res) => {
   try {
     if(req.session.loggedIn==undefined){
@@ -31,69 +31,8 @@ router.get('/', async (req, res) => {
 });
 
 
-
-// // GET all galleries for homepage
-// router.get('/', async (req, res) => {
-//   try {
-//     if(req.session.loggedIn==undefined){
-//       res.render('login', { 
-//         logged_in: req.session.logged_in 
-//       });
-//     }
-//     else{
-//     const dbGalleryData = await Gallery.findAll({
-//       include: [
-//         {
-//           model: Painting,
-//           attributes: ['filename', 'description'],
-//         },
-//       ],
-//     });
-
-//     const galleries = dbGalleryData.map((gallery) =>
-//       gallery.get({ plain: true })
-//     );
-
-//     res.render('homepage', {
-//       galleries,
-//       loggedIn: req.session.loggedIn,
-//     });
-//   }} catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
-
-// GET one gallery
-// Use the custom middleware before allowing the user to access the gallery
-router.get('/gallery/:id', withAuth, async (req, res) => {
-  try {
-    const dbGalleryData = await Gallery.findByPk(req.params.id, {
-      include: [
-        {
-          model: Painting,
-          attributes: [
-            'id',
-            'title',
-            'artist',
-            'exhibition_date',
-            'filename',
-            'description',
-          ],
-        },
-      ],
-    });
-
-    const gallery = dbGalleryData.get({ plain: true });
-    res.render('gallery', { gallery, loggedIn: req.session.loggedIn });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-// GET one gallery
-// Use the custom middleware before allowing the user to access the gallery
+// Get one survey
+// Use the custom middleware before allowing the user to access the survey
 router.get('/surveys/:id', withAuth, async (req, res) => {
   try {
     const dbSurveyData = await Survey.findByPk(req.params.id, {
@@ -119,28 +58,5 @@ router.get('/survey', withAuth, async (req, res) => {
   }
 });
 
-// GET one painting
-// Use the custom middleware before allowing the user to access the painting
-router.get('/painting/:id', withAuth, async (req, res) => {
-  try {
-    const dbPaintingData = await Painting.findByPk(req.params.id);
-
-    const painting = dbPaintingData.get({ plain: true });
-
-    res.render('painting', { painting, loggedIn: req.session.loggedIn });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-
-  res.render('login');
-});
 
 module.exports = router;
