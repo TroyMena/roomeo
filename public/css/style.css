@@ -183,6 +183,11 @@ img {
   flex-flow: column wrap;
   align-content: flex-start;
   align-items: center;
+  margin: 10px;
+}
+
+.gallery{
+  background-color: #d8e7ed; 
 }
 
 /* /LOGIN / SIGNUP PAGE/ */
