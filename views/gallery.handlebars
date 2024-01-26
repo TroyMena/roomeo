@@ -1,9 +1,47 @@
 <section class="container">
+  <img src="{{surveys.profilePic}}" alt="Profile Picture" class="profile-image">
+  <h3 class="gallery-name">{{surveys.name}}</h3>
+  <h4>Temperature Preference: {{surveys.temperature_pref}}</h4>
+  <h4>Sleep and Wake Hours: {{surveys.sleepWakeHours}}</h4>
+  <h4>Parties: {{surveys.parties}}</h4>
+  <h4>Cleanliness Level: {{surveys.cleanlinessLevel}}</h4>
+  <h4>Move-In Date: {{surveys.moveInDate}}</h4>
+  <h4>Relationship Status: {{surveys.relationshipStatus}}</h4>
+  <h4>Sharing Items: {{surveys.sharingItems}}</h4>
+  <!-- Add the following for the rest of the attributes -->
+  <h4>Living Style: {{surveys.livingStyle}}</h4>
+  <h4>Drinking Habits: {{surveys.drinkingHabits}}</h4>
+  <h4>Smoking: {{surveys.smoking}}</h4>
+  <h4>Decoration Style: {{surveys.decorationStyle}}</h4>
+  <h4>Cleaning Tasks: {{surveys.cleaningTasks}}</h4>
+  <h4>Bathroom: {{surveys.bathroom}}</h4>
+  <h4>Pet Peeves: {{surveys.petPeeves}}</h4>
+  <h4>Time Spent In Apartment: {{surveys.timeSpentInApartment}}</h4>
+  <h4>Political Status: {{surveys.politicalStatus}}</h4>
+
+  <!-- Other details... -->
+
+  <section class="flex-row justify-center">
+    {{#each surveys.url as |url|}}
+      {{> painting-details}}
+    {{/each}}
+  </section>
+</section>
+
+<style>
+  .profile-image {
+    width: 200px; /* Set your desired width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+</style>
+
+{{!-- <section class="container">
   <h3 class="gallery-name">{{gallery.name}}</h3>
-    <h4>Bio: {{user.survey}}</h4>
+    <h4>Age: {{user.age}}</h4>
+    <h4>Bio: {{user.bio}}</h4>
   <section class="flex-row justify-center">
     {{#each gallery.paintings as |painting|}}
     {{> painting-details}}
     {{/each}}
   </section>
-</section>
+</section> --}}

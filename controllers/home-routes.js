@@ -12,21 +12,16 @@ router.get('/', async (req, res) => {
       });
     }
     else{
-    const dbGalleryData = await Gallery.findAll({
-      include: [
-        {
-          model: Painting,
-          attributes: ['filename', 'description'],
-        },
-      ],
+    const dbSurveyData = await Survey.findAll({
     });
 
-    const galleries = dbGalleryData.map((gallery) =>
-      gallery.get({ plain: true })
+    const surveys = dbSurveyData.map((survey) =>
+    survey.get({ plain: true })
     );
+    console.log(surveys)
 
     res.render('homepage', {
-      galleries,
+      surveys,
       loggedIn: req.session.loggedIn,
     });
   }} catch (err) {
@@ -34,6 +29,40 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+
+// // GET all galleries for homepage
+// router.get('/', async (req, res) => {
+//   try {
+//     if(req.session.loggedIn==undefined){
+//       res.render('login', { 
+//         logged_in: req.session.logged_in 
+//       });
+//     }
+//     else{
+//     const dbGalleryData = await Gallery.findAll({
+//       include: [
+//         {
+//           model: Painting,
+//           attributes: ['filename', 'description'],
+//         },
+//       ],
+//     });
+
+//     const galleries = dbGalleryData.map((gallery) =>
+//       gallery.get({ plain: true })
+//     );
+
+//     res.render('homepage', {
+//       galleries,
+//       loggedIn: req.session.loggedIn,
+//     });
+//   }} catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 
 // GET one gallery
 // Use the custom middleware before allowing the user to access the gallery
@@ -63,8 +92,25 @@ router.get('/gallery/:id', withAuth, async (req, res) => {
   }
 });
 
+// GET one gallery
+// Use the custom middleware before allowing the user to access the gallery
+router.get('/surveys/:id', withAuth, async (req, res) => {
+  try {
+    const dbSurveyData = await Survey.findByPk(req.params.id, {
+    });
+
+    const surveys = dbSurveyData.get({ plain: true });
+    console.log("YESSS")
+    console.log(surveys)
+    res.render('gallery', { surveys, loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 //GET survey page
-router.get('/survey', async (req, res) => {
+router.get('/survey', withAuth, async (req, res) => {
   try {
     res.render('survey', { loggedIn: req.session.loggedIn });
   } catch (err) {

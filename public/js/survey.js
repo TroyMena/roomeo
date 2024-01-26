@@ -21,7 +21,7 @@ const surveyFormHandler = async (event) => {
   const politicalStatus = document.querySelector('#political-status').value.trim();
   //const preferredAgeRange = document.querySelector('#preferred-age-range').value.trim();
   const name = document.querySelector('#First-Last').value.trim();
-  const age = document.querySelector('#age-range').value.trim();
+  //const age = document.querySelector('#age-range').value.trim();
   const profilePicLocation = document.querySelector('#file-input')
   const file = profilePicLocation.files[0].name;
   console.log(file)
@@ -62,7 +62,7 @@ console.log(profilePic)
       timeSpentInApartment,
       politicalStatus,
       name,
-      age,
+     // preferredAgeRange,
       profilePic,
      }),
     headers: { 'Content-Type': 'application/json' },

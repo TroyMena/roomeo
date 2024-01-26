@@ -21,7 +21,7 @@ router.post('/', withAuth, async (req, res) => {
     console.log(req.body)
     const newSurvey = await Survey.create({
       ...req.body,
-      //user_id: req.session.user_id,
+      user_id: req.session.user_id,
     });
     console.log(newSurvey)
     res.status(200).json(newSurvey);

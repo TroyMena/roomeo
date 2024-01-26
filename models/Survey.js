@@ -84,7 +84,7 @@ Survey.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    age: {
+    preferredAgeRange: {
       type: DataTypes.STRING,
       allowNull: true,
     },
