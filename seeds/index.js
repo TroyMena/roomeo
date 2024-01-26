@@ -1,6 +1,5 @@
 const sequelize = require('../config/connection');
 const seedSurvey = require('./surveyData');
-const seedPaintings = require('./paintingData');
 const seedGallery = require('./galleryData');
 
 
@@ -10,8 +9,6 @@ const seedAll = async () => {
   await seedSurvey();
 
   await seedGallery();
-
-  await seedPaintings();
 
   process.exit(0);
 };
