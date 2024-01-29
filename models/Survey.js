@@ -2,16 +2,20 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const User = require('./User');
 
+// create our Survey model
 class Survey extends Model {}
 
+// create fields/columns for Survey model
 Survey.init(
   {
+    // define an id column
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
+    // Define other survey attributes here, such as temperature preferance, pets, etc.
     temperature_pref: {
       type: DataTypes.STRING,
       allowNull: true,

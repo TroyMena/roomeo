@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 
 class Profile extends Model {}
 
+// create fields/columns for Profile model
 Profile.init(
     {
         id: {
@@ -20,9 +21,10 @@ Profile.init(
           type: DataTypes.INTEGER,
           allowNull: true,
         },
-        // Add more attributes as needed for your specific profile model
+    
     },
     {
+    // Pass in our imported sequelize connection (the direct connection to our database)
     sequelize,
     timestamps: false,
     freezeTableName: true,

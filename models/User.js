@@ -1,13 +1,17 @@
+// import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
+// create our User model
 class User extends Model {
+  // checks password for login
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
+// create fields/columns for User model
 User.init(
   {
     id: {
@@ -37,6 +41,7 @@ User.init(
     },
   },
   {
+    // hash password before creating new user
     hooks: {
       async beforeCreate(newUserData) {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
