@@ -46,11 +46,16 @@ router.get('/surveys/:id', withAuth, async (req, res) => {
   try {
     const dbSurveyData = await Survey.findByPk(req.params.id, {
     });
+    const dbUserData = await User.findAll({
+    });
+    console.log(dbUserData)
 
     const surveys = dbSurveyData.get({ plain: true });
-    console.log("YESSS")
-    console.log(surveys)
-    res.render('gallery', { surveys, loggedIn: req.session.loggedIn });
+    const users = dbUserData.reduce((acc, user) => {
+      acc[user.id] = user.get({ plain: true });
+      return acc;
+    }, {});
+    res.render('gallery', { surveys, loggedIn: req.session.loggedIn,users: users[dbSurveyData.user_id] });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -60,7 +65,11 @@ router.get('/surveys/:id', withAuth, async (req, res) => {
 //GET survey page
 router.get('/survey', withAuth, async (req, res) => {
   try {
-    res.render('survey', { loggedIn: req.session.loggedIn });
+    const dbUserData = await User.findByPk(req.session.user_id, {
+    });
+    const user = dbUserData.get({ plain: true });
+    console.log(user)
+    res.render('survey', { loggedIn: req.session.loggedIn,user});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

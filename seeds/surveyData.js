@@ -3,7 +3,7 @@ const { Survey } = require('../models');
 const surveydata = [
   {
     name: 'Cardi B',
-    //age: 29,
+    ageRange: 29,
     temperature_pref: "65 and below",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Sporadic",
@@ -22,11 +22,12 @@ const surveydata = [
     timeSpentInApartment: "Go out 3-5 times a week",
     politicalStatus: "left",
     preferredAgeRange: null,
-    profilePic: '/images/01-cardib.jpg'
+    profilePic: '/images/01-cardib.jpg',
+    user_id: 1
   },
   {
     name: 'Obama',
-    //age: 62,
+    ageRange: 62,
     temperature_pref: "65-70",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -45,11 +46,12 @@ const surveydata = [
     timeSpentInApartment: "Going out on weekends",
     politicalStatus: "left",
     preferredAgeRange: null,
-    profilePic: '/images/04-obama.jpg'
+    profilePic: '/images/04-obama.jpg',
+    user_id: 2
   },
   {
     name: 'Megan Thee Stallion',
-    //age: 28,
+    ageRange: 28,
     temperature_pref: "70-75",
     pets: "Has pets, but can't live with other animals",
     sleepWakeHours: "I like late nights but still get up early",
@@ -68,11 +70,12 @@ const surveydata = [
     timeSpentInApartment: "Never in the apartment",
     politicalStatus: "left",
     preferredAgeRange: null,
-    profilePic: '/images/05-megan.jpg'
+    profilePic: '/images/05-megan.jpg',
+    user_id: 3
   },
   {
     name: 'Gypsy Rose Blanchard',
-    //age: 32,
+    ageRange: 32,
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -91,7 +94,8 @@ const surveydata = [
     timeSpentInApartment: "Going out on weekends",
     politicalStatus: "left",
     preferredAgeRange: null,
-    profilePic: '/images/08-gypsy.jpg'
+    profilePic: '/images/08-gypsy.jpg',
+    user_id: 4
   }, 
 ];
 
