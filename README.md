@@ -1,6 +1,5 @@
 ## Description:
-* How many people had a bad roommate? It seems to be ubiquitous in society, and it is a problem we want to help solve so roommates are of utmost compatibility. 
-* We developed a web application that has the following:
+How many people had a bad roommate? It seems to be ubiquitous in society, and it is a problem we want to help solve so roommates are of utmost compatibility. We developed a web application that has the following:
 * (1) a sign-up form to create an account,
 * (2) a survey questionaire to list your specifications and preferences,
 * (3) An easy-to-use user interface to find your perfect match.
@@ -23,6 +22,6 @@ APIs used: Cloudinary-
 Cloudinary is a cloud-based service that provides end-to-end image and video management solutions for websites and mobile applications. It offers a comprehensive set of tools for storing, optimizing, transforming, and delivering media assets. We used cloudinary to allow users to add a picture of themselves to display onto their profiles.
 
 
-# Links to Github Repository and Heroku
+## Links to Github Repository and Heroku
 * Github: https://github.com/TroyMena/roomeo
 * Heroku: https://roomeo-54bd0cc57e2b.herokuapp.com/ 
