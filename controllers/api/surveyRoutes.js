@@ -30,6 +30,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+// delete survey by id
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const surveyData = await Survey.destroy({

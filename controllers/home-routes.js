@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-//Josh added this, as the login button was not directing to login page when logged out. 
+// display login page
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
