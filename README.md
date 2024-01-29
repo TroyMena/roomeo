@@ -12,6 +12,9 @@
 * I WANT to create a detailed user profile highlighting my preferences, lifestyle, and expectations
 * SO THAT I can find a compatible roommate.
 
+## Screenshot of application:
+<img width="881" alt="Screen Shot 2024-01-29 at 5 10 59 PM" src="https://github.com/TroyMena/roomeo/assets/15932648/67eac851-9d02-4fea-b6ff-cd8b8279f04a">
+
 # Links
 
 * https://github.com/TroyMena/roomeo
