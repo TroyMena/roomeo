@@ -1,10 +1,10 @@
 ## Description:
-How many people had a bad roommate? It seems to be ubiquitous in society, and it is a problem we want to help solve so roommates are of utmost compatibility. We developed a web application that has the following:
+How many people had a bad roommate? It seems to be ubiquitous in society, and it is a problem we want to help solve so roommates are of utmost compatibility. We developed a web application, called Roomeo, to find your ideal roommate. The application has the following:
 * (1) a sign-up form to create an account,
 * (2) a survey questionaire to list your specifications and preferences,
-* (3) An easy-to-use user interface to find your perfect match.
+* (3) An easy-to-use user interface to find your ideal roommate.
 
-Obe unique aspect of this application is the length of the survey. The data from each user's survey is displayed on each user profile so that a potential roommate can find their perfect match! In addition, this survey is geared toward an entire city (i.e., Miami) instead of other roommate finders online that solely exist for college campuses. 
+One unique aspect of this application is the length of the survey. The data from each user's survey is displayed on each user profile so that a potential roommate can find their perfect match! In addition, this survey is geared toward an entire city (i.e., Miami) instead of other roommate finders online that solely exist for college campuses. 
 
 ## User story:
 
