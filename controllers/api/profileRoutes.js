@@ -50,6 +50,7 @@ router.get('/', (req, res) => {
             res.json(dbProfileData);
         }
       }) 
+    // creates a promise that will either resolve or reject
       .catch(err => {
         console.log(err);
         res.status(500).json({ error: 'Internal server error'});
