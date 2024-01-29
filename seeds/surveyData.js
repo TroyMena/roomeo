@@ -114,7 +114,7 @@ const surveydata = [
     decorationStyle: "Neutral colors",
     cleaningTasks: "I’ll clean my stuff, you clean yours",
     bathroom: "Yes, but I can share if I have to",
-    petPeeves: "when people don't know me",
+    petPeeves: "when people don't know me as the most famous third-string quarterback in Tallahassee Community College's history",
     timeSpentInApartment: "Going out on weekends",
     politicalStatus: "left",
     preferredAgeRange: null,
