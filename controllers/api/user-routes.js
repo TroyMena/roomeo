@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User } = require('../../models');
 // const withAuth = require('../../utils/auth');
 
-//Josh added
+
 // The `/api/users` endpoint
 router.get('/', async (req, res) => {
   // find all categories
