@@ -43,7 +43,7 @@ const surveyFormHandler = async (event) => {
   const profilePic = cloudinary_url
   //console.log(profilePic)
   //body: JSON.stringify({ "image": "/Users/jalland/Desktop/Picture1.png" }),
-
+// collect survey response 
   const response = await fetch('/api/surveys', {
     method: 'POST',
     body: JSON.stringify({     
