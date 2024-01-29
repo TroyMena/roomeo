@@ -16,7 +16,7 @@ Obe unique aspect of this application is the length of the survey. The data from
 <img width="881" alt="Screen Shot 2024-01-29 at 5 10 59 PM" src="https://github.com/TroyMena/roomeo/assets/15932648/67eac851-9d02-4fea-b6ff-cd8b8279f04a">
 
 ## Technologies used
-Technologies used: Github, VsCode, HTML, CSS, JavaScript, Node.js, Express, MySQL, Sequelize ORM, MVC paradigm, Insomnia, Multer, Heroku
+Technologies used: Github, VsCode, HTML, CSS, JavaScript, Node.js, Express, MySQL, Sequelize ORM, MVC paradigm, Handlebars, Insomnia, Multer, Heroku
 
 APIs used: Cloudinary- 
 Cloudinary is a cloud-based service that provides end-to-end image and video management solutions for websites and mobile applications. It offers a comprehensive set of tools for storing, optimizing, transforming, and delivering media assets. We used cloudinary to allow users to add a picture of themselves to display onto their profiles.
