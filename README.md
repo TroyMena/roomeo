@@ -13,9 +13,16 @@ The uniqueness of this application is the length of the survey. The data from ea
 * I WANT to create a detailed user profile highlighting my preferences, lifestyle, and expectations
 * SO THAT I can find a compatible roommate.
 
-## Screenshot of application:
+## Screenshot of application
 <img width="881" alt="Screen Shot 2024-01-29 at 5 10 59 PM" src="https://github.com/TroyMena/roomeo/assets/15932648/67eac851-9d02-4fea-b6ff-cd8b8279f04a">
 
+## Technologies used
+Technologies used: Github, VsCode, HTML, CSS, JavaScript, Express, Sequelize, Node.js, Insomnia, Multer, Heroku
+
+APIs used: Cloudinary- 
+Cloudinary is a cloud-based service that provides end-to-end image and video management solutions for websites and mobile applications. It offers a comprehensive set of tools for storing, optimizing, transforming, and delivering media assets. We used cloudinary to allow users to add a picture of themselves to display onto their profiles.
+
+
 # Links to Github Repository and Heroku
-* https://github.com/TroyMena/roomeo
-* https://roomeo-54bd0cc57e2b.herokuapp.com/ 
+* Github: https://github.com/TroyMena/roomeo
+* Heroku: https://roomeo-54bd0cc57e2b.herokuapp.com/ 
