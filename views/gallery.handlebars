@@ -1,3 +1,4 @@
+{{!-- survey answers displayed on user profiles --}}
 <section class="container">
   <img src="{{surveys.profilePic}}" alt="Profile Picture" class="profile-image">
   <h3 class="gallery-name">{{surveys.name}}</h3>
@@ -20,8 +21,7 @@
   <h5 class="questions">Time Spent In Apartment: </h5>  <span class="answer"> {{surveys.timeSpentInApartment}}</span>
   <h5 class="questions">Political Status: </h5>  <span class="answer">{{surveys.politicalStatus}}</span>
 
-  <!-- Other details... -->
-
+{{!-- loop through survey URL and display --}}
   <section>
     {{#each surveys.url as |url|}}
     {{/each}}
