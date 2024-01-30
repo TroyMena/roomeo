@@ -97,7 +97,7 @@ Survey.init(
       allowNull: true,
     },
     bio: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: true,
     },
     user_id: {
