@@ -229,7 +229,7 @@ const surveydata = [
   {
     name: 'Gertrude Walters',
     ageRange: 90,
-    bio: "",
+    bio: "Hello, dear friend! I'm Gertrude, a lively 90-year-old, and I'm on the lookout for a delightful roomie to share my golden years with. Life is a beautiful journey, and I believe every moment is a chance for new connections and heartwarming memories. Let's make our shared space a haven of laughter, wisdom, and timeless tales! ",
     temperature_pref: "65-70",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -254,7 +254,7 @@ const surveydata = [
   {
     name: 'Justin Drew Bieber',
     ageRange: 29,
-    bio: "",
+    bio: "You know me as the pop sensation Justin Bieber, but in our cozy abode, you can call me J-Biebs. When I'm not belting out chart-toppers or perfecting my hair flip, you'll find me unwinding with a guitar, practicing my skateboarding tricks, or binging on some legit comfort food. Born and bred in Canada, I bring that mix of charm, politeness, and a touch of swagger to our shared space.",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -279,7 +279,7 @@ const surveydata = [
   {
     name: 'Archibald Cyrus Kennedy VI',
     ageRange: 37,
-    bio: "",
+    bio: "In the hallowed halls of the Kennedy lineage, I stand as the sixth in succession. Born and bred with a taste for the finer things in life, you'll find me engrossed in classical literature, savoring a cup of meticulously brewed tea, or perhaps indulging in an evening of ballroom dancing. Hailing from a world of tradition, I bring an air of sophistication and a penchant for cultivating refined environments.",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
