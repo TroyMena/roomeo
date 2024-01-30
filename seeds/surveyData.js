@@ -154,6 +154,7 @@ const surveydata = [
   {
     name: 'Jim Smith',
     ageRange: 28,
+    bio: "",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -178,6 +179,7 @@ const surveydata = [
   {
     name: 'Maria Gonzalez',
     ageRange: 34,
+    bio: "",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -202,6 +204,7 @@ const surveydata = [
   {
     name: 'Kevin Johnson',
     ageRange: 31,
+    bio: "",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -226,6 +229,7 @@ const surveydata = [
   {
     name: 'Gertrude Walters',
     ageRange: 90,
+    bio: "",
     temperature_pref: "65-70",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -250,6 +254,7 @@ const surveydata = [
   {
     name: 'Justin Drew Bieber',
     ageRange: 29,
+    bio: "",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -274,6 +279,7 @@ const surveydata = [
   {
     name: 'Archibald Cyrus Kennedy VI',
     ageRange: 37,
+    bio: "",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
