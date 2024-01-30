@@ -4,6 +4,7 @@ const surveydata = [
   {
     name: 'Cardi B',
     ageRange: 29,
+    bio: "I'm the queen of hip-hop, fashion, and making money moves! When I'm not busy tearing up the charts, you can catch me sipping on some okurrr coffee, slaying in my designer PJs, or perfecting my iconic nail game. Bronx-born and raised, I bring that New York energy wherever I go!",
     temperature_pref: "65 and below",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Sporadic",
@@ -28,6 +29,7 @@ const surveydata = [
   {
     name: 'Obama',
     ageRange: 62,
+    bio: "Former Commander-in-Chief turned roommate extraordinare! When I'm not busy making historic speeches or shooting hoops, you can catch me enjoying a good book, perfecting my dad jokes, or attempting to cook up a storm in the kitchen. Born in Hawaii, raised in Chicago, and now looking for the next adventure in our cozy abode.",
     temperature_pref: "65-70",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -52,6 +54,7 @@ const surveydata = [
   {
     name: 'Megan Thee Stallion',
     ageRange: 28,
+    bio: "Megan Thee Stallion in the house, y'all! When I'm not dropping chart-topping hits or rocking stages, you can find me unapologetically embracing the Hot Girl Summer lifestyle. H-Town born and raised, I bring that Southern hospitality and a whole lot of sass to the table.",
     temperature_pref: "70-75",
     pets: "Has pets, but can't live with other animals",
     sleepWakeHours: "I like late nights but still get up early",
@@ -76,6 +79,7 @@ const surveydata = [
   {
     name: 'Gypsy Rose Blanchard',
     ageRange: 32,
+    bio: "I'm all about embracing the magic of life! When I'm not lost in the pages of a thrilling mystery novel or experimenting with new makeup looks, you can catch me daydreaming about far-off places or planning my next adventure. Born with a heart full of curiosity, I'm excited to embark on this new chapter with a fabulous roomie by my side.",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -100,6 +104,7 @@ const surveydata = [
   {
     name: 'Jonathan Jones',
     ageRange: 19,
+    bio: "At 19, I'm rocking the world with my zest for life! Whether I'm strumming my guitar, testing out new recipes in the kitchen, or planning the next road trip, there's never a dull moment with me. Born and raised with a sense of humor and a passion for making every day count, I'm stoked to find a roomie to share in the excitement of this journey called life.",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -124,6 +129,7 @@ const surveydata = [
   {
     name: 'Emily Anderson',
     ageRange: 24,
+    bio: "At 24, I've got a heart full of wanderlust and a passion for soaking up every bit of life. When I'm not plotting my next getaway, you'll find me experimenting with new recipes, doodling in my sketchbook, or binge-watching the latest documentary series. Born with a spontaneous spirit and an appreciation for the little things, I'm thrilled to find a roomie to share in the excitement of this beautiful journey.",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
