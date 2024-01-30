@@ -154,7 +154,7 @@ const surveydata = [
   {
     name: 'Jim Smith',
     ageRange: 28,
-    bio: "",
+    bio: "THE Jim Smith here, hoping to connect with others in sunny Miami! I love the beach, parties, and accounting! Hope to find my Roomeo here!",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -179,7 +179,7 @@ const surveydata = [
   {
     name: 'Maria Gonzalez',
     ageRange: 34,
-    bio: "",
+    bio: "Fun, loving, and free personality! I'm moving to Miami really soon, and I'm hoping to have a new friend to go out to all the local bars and clubs with! Can't wait to meet you!!!",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
@@ -204,7 +204,7 @@ const surveydata = [
   {
     name: 'Kevin Johnson',
     ageRange: 31,
-    bio: "",
+    bio: "Hard worker, but very friendly! Born and raised in Miami, and this traffic is a nightmare! I hope to meet a fellow roomie who wants to live in Brickell. I just want to be in an area with more walkability, so I don't have to deal with bumper-to-bumper traffic anymore. Also I like pancakes.",
     temperature_pref: "75-80",
     pets: "Has pets, open to living with others",
     sleepWakeHours: "Morning person",
