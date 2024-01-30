@@ -24,6 +24,7 @@ const surveyFormHandler = async (event) => {
   const politicalStatus = document.querySelector('#political-status').value.trim();
   const name = document.querySelector('#First-Last').value.trim();
   const ageRange= document.querySelector('#age-range').value.trim();
+  const bio= document.querySelector('#bio').value.trim();
 
 
   const profilePic = cloudinary_url
@@ -52,6 +53,7 @@ const surveyFormHandler = async (event) => {
       name,
       ageRange,
       profilePic,
+      bio,
      }),
     headers: { 'Content-Type': 'application/json' },
   });
