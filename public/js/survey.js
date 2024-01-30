@@ -24,25 +24,10 @@ const surveyFormHandler = async (event) => {
   const politicalStatus = document.querySelector('#political-status').value.trim();
   const name = document.querySelector('#First-Last').value.trim();
   const ageRange= document.querySelector('#age-range').value.trim();
-  //const profilePicLocation = document.querySelector('#file-input')
-  //const file = profilePicLocation.files[0].name;
-  //console.log(file)
-  
 
-  // //Josh: response1 IS NOT WORKING SINCE profilePic is not a file path. Ask Nelio. 
-  // const response1 = await fetch('/image-upload', {
-  //   method: 'POST',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({ "image": `/Users/images/${file}` }), //Only works for mac and in an images folder
-  // });
-  // const data = await response1.json();
 
-  //const profilePic = (data.result.url)
   const profilePic = cloudinary_url
-  //console.log(profilePic)
-  //body: JSON.stringify({ "image": "/Users/jalland/Desktop/Picture1.png" }),
+ 
 // collect survey response 
   const response = await fetch('/api/surveys', {
     method: 'POST',
